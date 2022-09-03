@@ -5,8 +5,10 @@ const useProduct=()=>{
     useEffect(()=>{
         fetch('products.json')
         .then(res=>res.json())
-        .then(data=>setProducts(data))
-    },[])
-    return [products,setProducts]
+        .then(data=>{
+            setProducts(data)
+        })
+    },[]);
+    return [products,setProducts];
 }
 export default useProduct;

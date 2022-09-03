@@ -7,7 +7,8 @@ import Product from '../Product/Product';
 import './Shop.css';
 
 const Shop = () => {
-    const [products, setProducts]=useProduct();
+    const [products]=useProduct();
+    console.log(products);
     const [cart, setCart] = useState([]);
 
    
